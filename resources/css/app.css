@@ -1,0 +1,24 @@
+#tree-wrapper ul {
+    list-style-type: none;
+}
+
+table#request-logs th {
+    word-break: break-word;
+}
+
+table#request-logs td {
+    vertical-align: middle;
+}
+
+table#request-logs td.column-url {
+    word-break: break-all;
+    width: 50%;
+}
+
+table#request-logs td.column-status-code {
+    width: 100px;
+}
+
+table#request-logs td.column-duration {
+    width: 125px;
+}

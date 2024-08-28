@@ -1,0 +1,51 @@
+{
+    "name": "dmeys/request-logger",
+    "description": "A Laravel/Lumen package to log requests and responses",
+    "keywords": [
+        "request log",
+        "log",
+        "logger",
+        "debugging",
+        "laravel",
+        "lumen"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Zadyraka",
+            "email": "dzadyraka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dmeys\\RequestLogger\\": "src"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dmeys\\RequestLogger\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dmeys\\RequestLogger\\RequestLoggerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0|8.2",
+        "illuminate/support": ">5.7",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "ext-pdo": "*",
+        "orchestra/testbench": "6.x-dev",
+        "nunomaduro/collision": "^5.10"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
